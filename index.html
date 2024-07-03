@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/5e13cef3ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Ruchika</span><br>Mishra from Kanpur</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!----------------about------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkzxnxwmAsNDn3wTRw_HPbBJ34l2hMSz31rz1X52c0_2iCez1E-sNQSD5fNdy6uCfk3O4&usqp=CAU">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste recusandae aspernatur dolorum eius optio esse quae eaque accusantium. Qui omnis et aperiam voluptatum. Repellendus iste dolore delectus neque aperiam excepturi, illum sapiente modi illo quos doloremque corporis quaerat beatae quam quo vitae ex tempora praesentium blanditiis!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">certificates</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Hackerrank</span><br>SQL Basis</li>
+                            <li><span>Infosys SpringBoard</span><br>Pyhton Fundamentals</li>
+                            <li><span>Infosys SpringBoard</span><br>OOPS using Pyhton</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Feb 2024 - Curent</span><br>Automated Fabric Defect Detection</li>
+                            <li><span>June 2023 - Aug 2023</span><br>Ayurvedic Virtual Assitant</li>
+                            <li><span>Nov 2022 - Jan 2023</span><br>Fake News Detection</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>B.Tech</li>
+                            <li><span>2019 - 2020</span><br>Intermediate</li>
+                            <li><span>2017 - 2018</span><br>High School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-------------services-------------> 
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>Basic to advance knowledge of HTML, which helps me in different projects.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>Basic to advance knowledge of HTML, which helps me in different projects.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Basic to advance knowledge of HTML, which helps me in different projects.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+<!---------------portfolio---------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxrQPRj5tnCP0J97CSV-ci53zLQZQwaCAZJA&s">
+                    <div class="layer">
+                        <h3>Fake News Detection</h3>
+                        <p> Machine Learning with Python is used for the detection of fake news.
+                            To build a model to accurately classify a piece of news as REAL or FAKE.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkFWy18XNWO4DDNL8LMaADBJpq3nV4ZRhkQ&s">
+                    <div class="layer">
+                        <h3>Ayurvedic Virtual Assistant</h3>
+                        <p>Chatbot will analyze the question that user asks and it will understand the meaning of the question and will provide
+                         answers according to that.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvXRiT02ooBUPLgqzqnQiQUh3zvYixnkiZFw&s">
+                    <div class="layer">
+                        <h3>Fabric Defect Detection</h3>
+                        <p>The fabric defect detection system demonstrated high accuracy in identifying diverse defects such as stains, tears, and
+                        misweaving.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!-----------------contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ruchikamishra1411@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>9170254101</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="AspireNex-for-all-the-tasks/Ruchika_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Ruchika, made with <i class="fa-solid fa-heart"></i> by me</p>
+        </div>
+    </div>
+
+    <script>
+          
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
